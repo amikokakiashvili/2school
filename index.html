@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ქუთაისის №2 საჯარო სკოლა — იოსებ ოცხელის სახელობის</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+  --navy:#0D1B35;
+  --navy-2:#142244;
+  --navy-3:#1A2E58;
+  --gold:#B8960C;
+  --gold-2:#D4AC0D;
+  --gold-3:#F0C840;
+  --gold-pale:#FDF6DC;
+  --cream:#FAFAF7;
+  --white:#ffffff;
+  --text:#0D1B35;
+  --muted:#5C6B85;
+  --border:rgba(184,150,12,0.18);
+  --border-hard:rgba(184,150,12,0.35);
+  --sh-sm:0 2px 16px rgba(13,27,53,0.08);
+  --sh-md:0 8px 40px rgba(13,27,53,0.13);
+  --sh-lg:0 24px 72px rgba(13,27,53,0.2);
+  --tr:all 0.38s cubic-bezier(0.22,0.68,0,1.2);
+  --r:10px;
+  --display:'Cormorant Garamond',serif;
+  --body:'Outfit',sans-serif;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--body);background:var(--white);color:var(--text);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+::-webkit-scrollbar{width:4px;}
+::-webkit-scrollbar-track{background:#f0eee8;}
+::-webkit-scrollbar-thumb{background:var(--gold-2);border-radius:2px;}
+
+/* ── TOPBAR ── */
+.topbar{background:var(--navy);padding:9px 0;font-size:12.5px;color:rgba(255,255,255,0.6);border-bottom:1px solid rgba(184,150,12,0.12);}
+.topbar-inner{max-width:1320px;margin:0 auto;padding:0 48px;display:flex;justify-content:space-between;align-items:center;}
+.topbar-left{display:flex;gap:24px;align-items:center;}
+.topbar-left span{display:flex;align-items:center;gap:7px;}
+.topbar-left i{color:var(--gold-3);font-size:11px;}
+.topbar-right{display:flex;gap:4px;align-items:center;}
+.topbar-right a{color:rgba(255,255,255,0.5);text-decoration:none;width:28px;height:28px;display:flex;align-items:center;justify-content:center;border-radius:6px;font-size:12px;transition:color .3s,background .3s;}
+.topbar-right a:hover{color:var(--gold-3);background:rgba(184,150,12,0.12);}
+
+/* ── HEADER ── */
+header{position:sticky;top:0;z-index:900;background:rgba(13,27,53,0.96);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(184,150,12,0.2);}
+.nav-wrap{max-width:1320px;margin:0 auto;padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px;}
+.logo{display:flex;align-items:center;gap:16px;text-decoration:none;flex-shrink:0;}
+.logo-seal{width:54px;height:54px;border-radius:50%;border:1.5px solid var(--gold-2);background:linear-gradient(145deg,var(--navy-3),var(--navy));display:flex;align-items:center;justify-content:center;position:relative;flex-shrink:0;box-shadow:0 0 0 4px rgba(184,150,12,0.1);}
+.logo-seal::after{content:'';position:absolute;inset:4px;border-radius:50%;border:1px solid rgba(184,150,12,0.3);}
+.logo-num{font-family:var(--display);font-size:26px;font-weight:700;color:var(--gold-3);line-height:1;}
+.logo-info{display:flex;flex-direction:column;}
+.logo-name{font-size:13px;font-weight:600;color:var(--white);letter-spacing:.2px;line-height:1.35;}
+.logo-sub{font-size:10.5px;color:var(--gold-2);font-weight:400;letter-spacing:.6px;margin-top:2px;}
+nav{display:flex;align-items:center;gap:4px;}
+nav a{color:rgba(255,255,255,0.75);text-decoration:none;font-size:13.5px;font-weight:500;padding:8px 17px;border-radius:8px;transition:var(--tr);letter-spacing:.1px;}
+nav a:hover,nav a.active{color:var(--white);background:rgba(184,150,12,0.1);}
+nav a.active{color:var(--gold-3);}
+.nav-cta{background:var(--gold-2)!important;color:var(--navy)!important;font-weight:700!important;padding:9px 22px!important;}
+.nav-cta:hover{background:var(--gold-3)!important;transform:translateY(-1px);box-shadow:0 6px 20px rgba(184,150,12,0.4)!important;}
+.nav-admin-btn{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,0.07)!important;border:1px solid rgba(255,255,255,0.15)!important;color:rgba(255,255,255,0.7)!important;font-size:12.5px!important;padding:7px 14px!important;border-radius:7px;cursor:pointer;transition:var(--tr);}
+.nav-admin-btn:hover{background:rgba(255,255,255,0.12)!important;color:var(--white)!important;}
+.nav-admin-btn i{font-size:11px;}
+
+/* ── HERO ── */
+.hero{position:relative;height:100vh;min-height:720px;overflow:hidden;display:flex;align-items:center;}
+.hero-bg{position:absolute;inset:0;background-image:url('https://scontent.ftbs5-3.fna.fbcdn.net/v/t39.30808-6/481038228_2297795363928441_4477622380236096654_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=105&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=vgyfxTrAx6MQ7kNvwF-Dkj8&_nc_oc=Adrr1ZjkWG4x0lurkw3DJdr1-2_tL07wHVkkvn62MBl2gEMvp8Aoh5Cj256do8Ox5Qo&_nc_zt=23&_nc_ht=scontent.ftbs5-3.fna&_nc_gid=dceI9OFXyrkHryrpKdccFw&_nc_ss=7b2a8&oh=00_Af4r1hYgTjfr4b_7kg3DWjkI5cf0voUvRJJBpnfG8pPOFUg&oe=6A1C6EC9');background-size:cover;background-position:center 28%;transform:scale(1.06);transition:transform 9s ease;}
+.hero-bg.loaded{transform:scale(1);}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(125deg,rgba(8,16,36,0.94) 0%,rgba(13,27,53,0.8) 55%,rgba(8,16,36,0.55) 100%);}
+.hero-grain{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");opacity:.5;pointer-events:none;}
+.hero-light{position:absolute;inset:0;background:radial-gradient(ellipse 65% 70% at 8% 88%,rgba(184,150,12,0.09) 0%,transparent 60%),radial-gradient(ellipse 40% 50% at 85% 15%,rgba(184,150,12,0.06) 0%,transparent 60%);pointer-events:none;}
+.hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:0 48px;width:100%;display:grid;grid-template-columns:1fr 360px;gap:70px;align-items:center;}
+.hero-tag{display:inline-flex;align-items:center;gap:9px;background:rgba(184,150,12,0.12);border:1px solid rgba(184,150,12,0.3);color:var(--gold-3);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding:7px 16px;border-radius:30px;margin-bottom:30px;}
+.hero-tag .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-2);animation:blink 2.2s ease infinite;}
+@keyframes blink{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.5);}}
+.hero-title{font-family:var(--display);font-size:clamp(3rem,5.5vw,4.8rem);font-weight:700;color:var(--white);line-height:1.1;letter-spacing:-.5px;margin-bottom:14px;}
+.hero-title em{color:var(--gold-3);font-style:italic;}
+.hero-sub{font-size:13px;font-weight:400;color:rgba(255,255,255,0.45);letter-spacing:2.8px;text-transform:uppercase;margin-bottom:32px;}
+.hero-desc{font-size:17px;color:rgba(255,255,255,0.75);line-height:1.9;max-width:580px;margin-bottom:48px;font-weight:300;}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;padding:15px 34px;background:var(--gold-2);color:var(--navy);font-size:14px;font-weight:700;border-radius:9px;text-decoration:none;transition:var(--tr);letter-spacing:.2px;border:none;cursor:pointer;}
+.btn-primary:hover{background:var(--gold-3);transform:translateY(-3px);box-shadow:0 14px 32px rgba(184,150,12,0.45);}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;padding:15px 34px;background:transparent;color:var(--white);font-size:14px;font-weight:500;border:1.5px solid rgba(255,255,255,0.3);border-radius:9px;text-decoration:none;transition:var(--tr);backdrop-filter:blur(8px);}
+.btn-secondary:hover{border-color:rgba(255,255,255,0.65);background:rgba(255,255,255,0.09);transform:translateY(-3px);}
+.hero-card{background:rgba(255,255,255,0.05);border:1px solid rgba(184,150,12,0.22);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:20px;padding:42px 36px;color:white;animation:floatY 7s ease-in-out infinite;}
+@keyframes floatY{0%,100%{transform:translateY(0);}50%{transform:translateY(-12px);}}
+.hc-badge{display:inline-block;background:var(--gold-2);color:var(--navy);font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:20px;}
+.hc-year{font-family:var(--display);font-size:76px;font-weight:700;color:var(--gold-3);line-height:1;letter-spacing:-4px;margin-bottom:6px;}
+.hc-label{font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:28px;line-height:1.6;}
+.hc-div{height:1px;background:rgba(184,150,12,0.2);margin-bottom:24px;}
+.hc-facts{display:flex;flex-direction:column;gap:13px;}
+.hc-fact{display:flex;align-items:center;gap:12px;font-size:13.5px;color:rgba(255,255,255,0.8);}
+.hc-fact i{color:var(--gold-2);font-size:13px;width:16px;}
+.scroll-hint{position:absolute;bottom:38px;left:50%;transform:translateX(-50%);z-index:5;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,0.45);font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;}
+.scroll-mouse{width:22px;height:34px;border:1.5px solid rgba(255,255,255,0.25);border-radius:12px;position:relative;}
+.scroll-wheel{width:3px;height:7px;background:var(--gold-2);border-radius:2px;position:absolute;top:6px;left:50%;transform:translateX(-50%);animation:scrollAnim 1.9s ease infinite;}
+@keyframes scrollAnim{0%{opacity:1;transform:translateX(-50%) translateY(0);}100%{opacity:0;transform:translateX(-50%) translateY(14px);}}
+
+/* ── STATS STRIP ── */
+.stats-strip{background:var(--navy);border-top:3px solid var(--gold-2);}
+.stats-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-item{padding:44px 32px;text-align:center;border-right:1px solid rgba(255,255,255,0.05);position:relative;overflow:hidden;transition:var(--tr);}
+.stat-item::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:3px;background:var(--gold-2);transition:width .45s ease;border-radius:2px;}
+.stat-item:hover::after{width:55%;}
+.stat-item:last-child{border-right:none;}
+.stat-icon{font-size:22px;color:rgba(184,150,12,0.45);margin-bottom:14px;}
+.stat-num{font-family:var(--display);font-size:48px;font-weight:700;color:var(--gold-3);line-height:1;letter-spacing:-2px;margin-bottom:8px;}
+.stat-lbl{font-size:12.5px;color:rgba(255,255,255,0.5);font-weight:400;letter-spacing:.3px;}
+
+/* ── SECTIONS ── */
+.section{padding:116px 0;}
+.section-alt{background:var(--cream);}
+.wrap{max-width:1320px;margin:0 auto;padding:0 48px;}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;}
+.eyebrow::before{content:'';width:26px;height:2px;background:var(--gold-2);border-radius:1px;}
+.section-h{font-family:var(--display);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:700;color:var(--navy);line-height:1.18;letter-spacing:-.5px;margin-bottom:20px;}
+.section-p{font-size:16.5px;color:var(--muted);line-height:1.85;max-width:560px;}
+
+/* ── ABOUT ── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:90px;align-items:center;}
+.about-img-wrap{position:relative;}
+.about-frame{position:absolute;top:-18px;left:-18px;right:50px;bottom:50px;border:2px solid var(--border);border-radius:22px;pointer-events:none;}
+.about-img-main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:18px;display:block;box-shadow:var(--sh-lg);border:1px solid var(--border);}
+.about-badge{position:absolute;top:32px;right:-22px;background:var(--navy);border:2px solid var(--gold-2);border-radius:14px;padding:18px 24px;text-align:center;color:white;box-shadow:var(--sh-md);z-index:2;}
+.about-badge-num{font-family:var(--display);font-size:36px;font-weight:700;color:var(--gold-3);line-height:1;}
+.about-badge-txt{font-size:11px;color:rgba(255,255,255,0.6);margin-top:4px;letter-spacing:.5px;}
+.about-lead{font-family:var(--display);font-size:21px;font-weight:500;color:var(--navy-2);line-height:1.7;margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid var(--border);}
+.about-body{font-size:15.5px;color:var(--muted);line-height:1.92;margin-bottom:18px;}
+.about-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px;}
+.about-tag{display:flex;align-items:center;gap:8px;background:var(--white);border:1px solid var(--border-hard);color:var(--navy-2);font-size:13px;font-weight:600;padding:9px 18px;border-radius:9px;transition:var(--tr);}
+.about-tag:hover{background:var(--gold-pale);border-color:var(--gold-2);}
+.about-tag i{color:var(--gold-2);font-size:13px;}
+
+/* ── NEWS ── */
+.news-header{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:60px;gap:30px;}
+.see-all{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-size:13.5px;font-weight:600;text-decoration:none;padding-bottom:2px;border-bottom:1.5px solid transparent;transition:var(--tr);flex-shrink:0;}
+.see-all:hover{border-color:var(--gold);gap:12px;}
+.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+.news-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid rgba(0,0,0,0.06);box-shadow:var(--sh-sm);transition:var(--tr);display:flex;flex-direction:column;}
+.news-card:hover{transform:translateY(-9px);box-shadow:var(--sh-lg);border-color:var(--border-hard);}
+.card-img{position:relative;aspect-ratio:16/10;overflow:hidden;}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
+.news-card:hover .card-img img{transform:scale(1.07);}
+.card-tag{position:absolute;top:14px;left:14px;background:var(--gold-2);color:var(--navy);font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:6px;}
+.card-body{padding:28px;flex:1;display:flex;flex-direction:column;}
+.card-meta{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin-bottom:12px;}
+.card-meta i{font-size:11px;}
+.card-title{font-family:var(--display);font-size:19px;font-weight:600;color:var(--navy);line-height:1.45;margin-bottom:12px;}
+.card-excerpt{font-size:14px;color:var(--muted);line-height:1.78;flex:1;}
+.card-link{display:inline-flex;align-items:center;gap:7px;color:var(--gold);font-size:13px;font-weight:600;text-decoration:none;margin-top:20px;transition:gap .3s;}
+.card-link:hover{gap:11px;}
+.card-author{display:flex;align-items:center;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid rgba(0,0,0,0.06);}
+.card-author-img{width:32px;height:32px;border-radius:50%;object-fit:cover;border:2px solid var(--border-hard);}
+.card-author-name{font-size:12px;font-weight:600;color:var(--navy-2);}
+
+/* ── HERITAGE ── */
+.heritage{background:var(--navy);padding:108px 0;position:relative;overflow:hidden;}
+.heritage::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 55% 80% at 5% 50%,rgba(184,150,12,0.08) 0%,transparent 60%),radial-gradient(ellipse 40% 60% at 95% 50%,rgba(184,150,12,0.05) 0%,transparent 60%);pointer-events:none;}
+.heritage-inner{max-width:1320px;margin:0 auto;padding:0 48px;display:grid;grid-template-columns:1fr 1fr;gap:86px;align-items:center;}
+.heritage-quote{position:relative;padding-left:34px;}
+.heritage-quote::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--gold-2),transparent);border-radius:2px;}
+.q-mark{font-family:var(--display);font-size:100px;color:var(--gold-2);line-height:.65;margin-bottom:22px;opacity:.4;}
+.q-text{font-family:var(--display);font-size:23px;font-weight:400;color:rgba(255,255,255,0.9);line-height:1.78;font-style:italic;margin-bottom:32px;letter-spacing:.1px;}
+.q-author{display:flex;align-items:center;gap:14px;}
+.q-avatar{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-2);}
+.q-name{font-size:15px;font-weight:600;color:var(--white);}
+.q-role{font-size:12px;color:rgba(255,255,255,0.45);margin-top:3px;}
+.pillars{display:flex;flex-direction:column;gap:20px;}
+.pillar{display:flex;gap:20px;align-items:flex-start;padding:26px 28px;background:rgba(255,255,255,0.04);border:1px solid rgba(184,150,12,0.14);border-radius:12px;transition:var(--tr);}
+.pillar:hover{background:rgba(184,150,12,0.07);border-color:rgba(184,150,12,0.28);}
+.pillar-icon{width:46px;height:46px;background:rgba(184,150,12,0.14);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold-3);font-size:18px;}
+.pillar-title{font-size:15px;font-weight:600;color:var(--white);margin-bottom:6px;}
+.pillar-desc{font-size:13.5px;color:rgba(255,255,255,0.5);line-height:1.68;}
+
+/* ── GALLERY ── */
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto auto;gap:16px;}
+.gallery-item{border-radius:14px;overflow:hidden;position:relative;cursor:pointer;}
+.gallery-item:first-child{grid-column:1/3;grid-row:1/2;}
+.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease;}
+.gallery-item:hover img{transform:scale(1.06);}
+.gallery-item::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(13,27,53,.6) 0%,transparent 50%);opacity:0;transition:opacity .4s;}
+.gallery-item:hover::after{opacity:1;}
+.gallery-item:first-child{aspect-ratio:16/7;}
+.gallery-item:not(:first-child){aspect-ratio:4/3;}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.contact-block{display:flex;flex-direction:column;gap:18px;}
+.contact-item{display:flex;gap:18px;align-items:flex-start;padding:22px 26px;background:var(--cream);border:1px solid var(--border);border-radius:12px;transition:var(--tr);}
+.contact-item:hover{border-color:var(--gold-2);box-shadow:var(--sh-sm);}
+.contact-icon{width:46px;height:46px;background:var(--navy);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold-2);font-size:17px;}
+.contact-lbl{font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted);margin-bottom:5px;}
+.contact-val{font-size:15px;font-weight:600;color:var(--navy);}
+.social-row{display:flex;gap:10px;margin-top:6px;}
+.soc-btn{width:44px;height:44px;background:var(--navy);color:var(--gold-2);border-radius:10px;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:17px;transition:var(--tr);}
+.soc-btn:hover{background:var(--gold-2);color:var(--navy);transform:translateY(-3px);box-shadow:0 8px 22px rgba(184,150,12,0.4);}
+.map-wrap{border-radius:16px;overflow:hidden;border:2px solid var(--border-hard);box-shadow:var(--sh-md);}
+.map-wrap iframe{width:100%;height:390px;display:block;filter:contrast(1.1) saturate(0.85);}
+
+/* ── FOOTER ── */
+footer{background:var(--navy);border-top:3px solid var(--gold-2);}
+.footer-top{max-width:1320px;margin:0 auto;padding:72px 48px 52px;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:52px;}
+.footer-logo{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.fl-badge{width:44px;height:44px;border-radius:50%;border:2px solid var(--gold-2);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:20px;font-weight:700;color:var(--gold-3);}
+.fl-name{font-size:12px;font-weight:600;color:var(--white);line-height:1.5;}
+.fl-sub{font-size:10px;color:var(--gold-2);margin-top:2px;}
+.footer-desc{font-size:13.5px;color:rgba(255,255,255,0.45);line-height:1.9;max-width:270px;margin-bottom:28px;}
+.footer-col-h{font-size:11.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-2);margin-bottom:22px;}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:13px;}
+.footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:14px;transition:color .3s;display:flex;align-items:center;gap:8px;}
+.footer-links a i{font-size:11px;color:var(--gold-2);opacity:.55;}
+.footer-links a:hover{color:var(--white);}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.05);padding:22px 48px;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:rgba(255,255,255,0.3);gap:20px;}
+
+/* ── SCROLL REVEAL ── */
+.reveal{opacity:0;transform:translateY(38px);transition:opacity .85s ease,transform .85s ease;}
+.reveal.active{opacity:1;transform:translateY(0);}
+.reveal-d1{transition-delay:.15s;}
+.reveal-d2{transition-delay:.3s;}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   ADMIN SYSTEM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+#admin-btn-wrap{position:fixed;bottom:28px;right:28px;z-index:8000;}
+.fab{width:54px;height:54px;background:var(--navy);border:2px solid var(--gold-2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gold-3);font-size:20px;cursor:pointer;box-shadow:0 8px 28px rgba(13,27,53,.35);transition:var(--tr);}
+.fab:hover{background:var(--gold-2);color:var(--navy);transform:scale(1.08);}
+
+/* LOGIN MODAL */
+#login-modal{display:none;position:fixed;inset:0;z-index:9000;background:rgba(8,16,36,.85);backdrop-filter:blur(12px);align-items:center;justify-content:center;}
+#login-modal.open{display:flex;}
+.lm-box{background:var(--white);border-radius:20px;padding:48px 44px;width:100%;max-width:420px;position:relative;box-shadow:var(--sh-lg);}
+.lm-close{position:absolute;top:18px;right:18px;background:none;border:none;font-size:20px;color:var(--muted);cursor:pointer;transition:color .3s;}
+.lm-close:hover{color:var(--text);}
+.lm-logo{display:flex;align-items:center;gap:12px;margin-bottom:32px;}
+.lm-seal{width:44px;height:44px;border-radius:50%;background:var(--navy);border:2px solid var(--gold-2);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:20px;font-weight:700;color:var(--gold-3);}
+.lm-title{font-family:var(--display);font-size:22px;font-weight:700;color:var(--navy);}
+.lm-sub{font-size:12.5px;color:var(--muted);}
+.field{margin-bottom:18px;}
+.field label{display:block;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px;}
+.field input{width:100%;padding:13px 16px;border:1.5px solid #dde2ec;border-radius:9px;font-family:var(--body);font-size:14.5px;color:var(--text);transition:border-color .3s;outline:none;background:#fafafa;}
+.field input:focus{border-color:var(--gold-2);background:var(--white);}
+.btn-login{width:100%;padding:14px;background:var(--gold-2);color:var(--navy);font-family:var(--body);font-size:15px;font-weight:700;border:none;border-radius:9px;cursor:pointer;transition:var(--tr);margin-top:6px;}
+.btn-login:hover{background:var(--gold-3);transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,150,12,.4);}
+.login-err{display:none;background:#fef2f2;border:1px solid #fecaca;color:#dc2626;font-size:13.5px;padding:11px 14px;border-radius:8px;margin-top:14px;}
+
+/* ADMIN PANEL */
+#admin-panel{display:none;position:fixed;inset:0;z-index:9500;background:rgba(8,16,36,.9);backdrop-filter:blur(12px);overflow-y:auto;}
+#admin-panel.open{display:block;}
+.ap-wrap{max-width:1100px;margin:0 auto;padding:40px 32px 80px;}
+.ap-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;padding-bottom:24px;border-bottom:2px solid var(--border-hard);}
+.ap-title{font-family:var(--display);font-size:30px;font-weight:700;color:var(--white);}
+.ap-title span{color:var(--gold-3);}
+.ap-actions{display:flex;gap:12px;align-items:center;}
+.ap-user{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.7);font-size:13px;}
+.ap-user-img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-2);}
+.ap-user-placeholder{width:36px;height:36px;border-radius:50%;background:rgba(184,150,12,.25);border:2px solid var(--gold-2);display:flex;align-items:center;justify-content:center;color:var(--gold-3);font-size:15px;}
+.btn-close-panel{display:flex;align-items:center;gap:7px;padding:9px 20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.8);font-family:var(--body);font-size:13px;font-weight:500;border-radius:8px;cursor:pointer;transition:var(--tr);}
+.btn-close-panel:hover{background:rgba(255,255,255,.13);color:var(--white);}
+.ap-tabs{display:flex;gap:8px;margin-bottom:36px;border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:0;}
+.ap-tab{padding:12px 22px;background:none;border:none;border-bottom:2px solid transparent;margin-bottom:-1px;color:rgba(255,255,255,.5);font-family:var(--body);font-size:14px;font-weight:500;cursor:pointer;transition:var(--tr);}
+.ap-tab:hover{color:rgba(255,255,255,.8);}
+.ap-tab.active{color:var(--gold-3);border-color:var(--gold-2);}
+.ap-section{display:none;}
+.ap-section.active{display:block;}
+.ap-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:36px;margin-bottom:24px;}
+.ap-card-h{font-family:var(--display);font-size:20px;font-weight:600;color:var(--white);margin-bottom:22px;display:flex;align-items:center;gap:10px;}
+.ap-card-h i{color:var(--gold-2);font-size:18px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.form-row.single{grid-template-columns:1fr;}
+.ap-field{display:flex;flex-direction:column;gap:7px;}
+.ap-field label{font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.5);}
+.ap-field input,.ap-field textarea,.ap-field select{width:100%;padding:12px 15px;background:rgba(255,255,255,.07);border:1.5px solid rgba(255,255,255,.12);border-radius:9px;font-family:var(--body);font-size:14px;color:var(--white);transition:border-color .3s;outline:none;resize:vertical;}
+.ap-field input:focus,.ap-field textarea:focus,.ap-field select:focus{border-color:var(--gold-2);}
+.ap-field textarea{min-height:100px;}
+.ap-field select option{background:#1a2e58;color:white;}
+.ap-img-preview{width:100%;height:160px;border-radius:10px;object-fit:cover;border:2px dashed rgba(184,150,12,.3);display:none;margin-top:8px;}
+.ap-img-preview.show{display:block;}
+.ap-img-placeholder{width:100%;height:100px;border-radius:10px;border:2px dashed rgba(184,150,12,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:rgba(255,255,255,.35);font-size:13px;cursor:pointer;transition:border-color .3s,color .3s;}
+.ap-img-placeholder:hover{border-color:rgba(184,150,12,.5);color:rgba(255,255,255,.6);}
+.ap-img-placeholder i{font-size:24px;}
+.btn-submit{display:inline-flex;align-items:center;gap:8px;padding:13px 30px;background:var(--gold-2);color:var(--navy);font-family:var(--body);font-size:14px;font-weight:700;border:none;border-radius:9px;cursor:pointer;transition:var(--tr);}
+.btn-submit:hover{background:var(--gold-3);transform:translateY(-2px);box-shadow:0 8px 22px rgba(184,150,12,.4);}
+.btn-danger{background:rgba(220,38,38,.15);border:1px solid rgba(220,38,38,.3);color:#fca5a5;}
+.btn-danger:hover{background:rgba(220,38,38,.25)!important;color:#fca5a5!important;box-shadow:none!important;transform:none!important;}
+.success-toast{display:none;position:fixed;top:28px;right:28px;z-index:99999;background:#16a34a;color:white;padding:14px 22px;border-radius:10px;font-size:14px;font-weight:500;gap:10px;align-items:center;box-shadow:0 8px 28px rgba(0,0,0,.2);animation:slideIn .4s ease;}
+.success-toast.show{display:flex;}
+@keyframes slideIn{from{opacity:0;transform:translateX(60px);}to{opacity:1;transform:translateX(0);}}
+.posts-list{display:flex;flex-direction:column;gap:14px;margin-top:8px;}
+.post-item{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:18px 22px;display:flex;align-items:center;gap:16px;transition:var(--tr);}
+.post-item:hover{background:rgba(255,255,255,.09);}
+.post-thumb{width:72px;height:54px;border-radius:8px;object-fit:cover;border:1px solid rgba(255,255,255,.1);flex-shrink:0;}
+.post-thumb-ph{width:72px;height:54px;border-radius:8px;background:rgba(184,150,12,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold-2);font-size:20px;}
+.post-info{flex:1;min-width:0;}
+.post-info h4{font-size:14.5px;font-weight:600;color:var(--white);margin-bottom:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.post-info p{font-size:12.5px;color:rgba(255,255,255,.45);}
+.post-actions{display:flex;gap:8px;flex-shrink:0;}
+.post-btn{width:34px;height:34px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);border-radius:7px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:rgba(255,255,255,.6);font-size:14px;transition:var(--tr);}
+.post-btn:hover{background:rgba(255,255,255,.12);color:var(--white);}
+.post-btn.del:hover{background:rgba(220,38,38,.2);color:#fca5a5;border-color:rgba(220,38,38,.3);}
+.profile-grid{display:grid;grid-template-columns:200px 1fr;gap:32px;align-items:start;}
+.profile-photo-wrap{display:flex;flex-direction:column;align-items:center;gap:12px;}
+.profile-photo{width:140px;height:140px;border-radius:50%;object-fit:cover;border:3px solid var(--gold-2);display:none;}
+.profile-photo.show{display:block;}
+.profile-photo-ph{width:140px;height:140px;border-radius:50%;background:rgba(184,150,12,.15);border:3px dashed var(--gold-2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:rgba(255,255,255,.4);font-size:12px;cursor:pointer;}
+.profile-photo-ph i{font-size:30px;color:var(--gold-2);}
+.upload-label{font-size:12px;color:rgba(255,255,255,.45);text-align:center;cursor:pointer;}
+.upload-label:hover{color:var(--gold-3);}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px;}
+.stat-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:20px;text-align:center;}
+.sc-num{font-family:var(--display);font-size:32px;font-weight:700;color:var(--gold-3);line-height:1;margin-bottom:6px;}
+.sc-lbl{font-size:12px;color:rgba(255,255,255,.45);}
+.tag-badge{display:inline-block;background:rgba(184,150,12,.18);color:var(--gold-3);font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;margin-right:4px;margin-bottom:4px;letter-spacing:.5px;}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.hero-inner{grid-template-columns:1fr;}.hero-card{display:none;}.about-grid{grid-template-columns:1fr;gap:52px;}.about-img-wrap{max-width:380px;margin:0 auto;}.heritage-inner{grid-template-columns:1fr;gap:52px;}.footer-top{grid-template-columns:1fr 1fr;}.ap-wrap{padding:28px 20px 60px;}}
+@media(max-width:900px){nav{display:none;}.topbar{display:none;}.news-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto;}.contact-grid{grid-template-columns:1fr;}.stats-inner{grid-template-columns:repeat(2,1fr);}.stat-item:nth-child(2){border-right:none;}.footer-top{grid-template-columns:1fr;}.gallery-grid{grid-template-columns:1fr 1fr;}.gallery-item:first-child{grid-column:1/3;}.form-row{grid-template-columns:1fr;}.stats-grid{grid-template-columns:1fr 1fr;}.profile-grid{grid-template-columns:1fr;}}
+@media(max-width:600px){.hero-inner,.wrap,.footer-bottom,.footer-top{padding-left:24px;padding-right:24px;}.stats-inner{grid-template-columns:1fr;}.hero-btns{flex-direction:column;}.gallery-grid{grid-template-columns:1fr;}.gallery-item:first-child{grid-column:auto;}.ap-wrap{padding:20px 16px 60px;}}
+</style>
+</head>
+<body>
+
+<!-- SUCCESS TOAST -->
+<div class="success-toast" id="toast"><i class="fa-solid fa-circle-check"></i> <span id="toast-msg">შენახულია!</span></div>
+
+<!-- FAB ADMIN BUTTON -->
+<div id="admin-btn-wrap">
+  <div class="fab" id="fab-btn" title="ადმინ პანელი">
+    <i class="fa-solid fa-user-shield"></i>
+  </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div id="login-modal">
+  <div class="lm-box">
+    <button class="lm-close" id="login-close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="lm-logo">
+      <div class="lm-seal">2</div>
+      <div>
+        <div class="lm-title">ადმინ პანელი</div>
+        <div class="lm-sub">სკოლა №2 — მართვის სისტემა</div>
+      </div>
+    </div>
+    <div class="field">
+      <label>მომხმარებელი</label>
+      <input type="text" id="login-user" placeholder="School2" autocomplete="username">
+    </div>
+    <div class="field">
+      <label>პაროლი</label>
+      <input type="password" id="login-pass" placeholder="••••••••" autocomplete="current-password">
+    </div>
+    <button class="btn-login" id="login-submit"><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;შესვლა</button>
+    <div class="login-err" id="login-err"><i class="fa-solid fa-triangle-exclamation"></i> &nbsp;არასწორი სახელი ან პაროლი</div>
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="admin-panel">
+  <div class="ap-wrap">
+    <div class="ap-header">
+      <div class="ap-title">ადმინ <span>პანელი</span></div>
+      <div class="ap-actions">
+        <div class="ap-user">
+          <div class="ap-user-placeholder" id="ap-avatar-preview-small">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <span>School2</span>
+        </div>
+        <button class="btn-close-panel" id="close-panel-btn">
+          <i class="fa-solid fa-xmark"></i> გასვლა
+        </button>
+      </div>
+    </div>
+
+    <div class="ap-tabs">
+      <button class="ap-tab active" data-tab="dashboard">
+        <i class="fa-solid fa-gauge-simple"></i> დაფა
+      </button>
+      <button class="ap-tab" data-tab="posts">
+        <i class="fa-solid fa-newspaper"></i> სიახლეები
+      </button>
+      <button class="ap-tab" data-tab="add-post">
+        <i class="fa-solid fa-plus"></i> სიახლის დამატება
+      </button>
+      <button class="ap-tab" data-tab="profile">
+        <i class="fa-solid fa-id-card"></i> პროფილი
+      </button>
+    </div>
+
+    <!-- DASHBOARD TAB -->
+    <div class="ap-section active" id="tab-dashboard">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="sc-num" id="dash-posts-count">0</div>
+          <div class="sc-lbl">გამოქვეყნებული სიახლე</div>
+        </div>
+        <div class="stat-card">
+          <div class="sc-num">1,500+</div>
+          <div class="sc-lbl">მოსწავლე</div>
+        </div>
+        <div class="stat-card">
+          <div class="sc-num">120</div>
+          <div class="sc-lbl">პედაგოგი</div>
+        </div>
+        <div class="stat-card">
+          <div class="sc-num">145</div>
+          <div class="sc-lbl">წელი ისტორია</div>
+        </div>
+      </div>
+      <div class="ap-card">
+        <div class="ap-card-h"><i class="fa-solid fa-circle-info"></i> სწრაფი ინფო</div>
+        <p style="color:rgba(255,255,255,.6);font-size:14.5px;line-height:1.8;margin-bottom:16px;">გამარჯობა, <strong style="color:var(--gold-3)">School2</strong>! ადმინ პანელიდან შეგიძლიათ:</p>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.65);font-size:14px;"><span style="color:var(--gold-2);font-size:16px;">✦</span> სიახლეების გამოქვეყნება ფოტოსთან ერთად</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.65);font-size:14px;"><span style="color:var(--gold-2);font-size:16px;">✦</span> პირადი ფოტოს ატვირთვა, სახელისა და როლის რედაქტირება</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.65);font-size:14px;"><span style="color:var(--gold-2);font-size:16px;">✦</span> გამოქვეყნებული სიახლეების ნახვა და წაშლა</div>
+          <div style="display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.65);font-size:14px;"><span style="color:var(--gold-2);font-size:16px;">✦</span> ცვლილებები მყისიერად ჩანს საიტის News სექციაში</div>
+        </div>
+      </div>
+      <div class="ap-card" id="dash-recent-posts" style="display:none;">
+        <div class="ap-card-h"><i class="fa-solid fa-clock-rotate-left"></i> ბოლო სიახლეები</div>
+        <div class="posts-list" id="dash-posts-list"></div>
+      </div>
+    </div>
+
+    <!-- POSTS TAB -->
+    <div class="ap-section" id="tab-posts">
+      <div class="ap-card">
+        <div class="ap-card-h"><i class="fa-solid fa-list"></i> ყველა სიახლე</div>
+        <div class="posts-list" id="all-posts-list">
+          <p style="color:rgba(255,255,255,.4);font-size:14px;">სიახლე ჯერ არ დამატებულა</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ADD POST TAB -->
+    <div class="ap-section" id="tab-add-post">
+      <div class="ap-card">
+        <div class="ap-card-h"><i class="fa-solid fa-pen-to-square"></i> ახალი სიახლე</div>
+        <div class="form-row">
+          <div class="ap-field">
+            <label>სათაური *</label>
+            <input type="text" id="post-title" placeholder="სიახლის სათაური">
+          </div>
+          <div class="ap-field">
+            <label>კატეგორია</label>
+            <select id="post-cat">
+              <option value="სიახლე">სიახლე</option>
+              <option value="კონფერენცია">კონფერენცია</option>
+              <option value="სპორტი">სპორტი</option>
+              <option value="კულტურა">კულტურა</option>
+              <option value="სასწავლო ტური">სასწავლო ტური</option>
+              <option value="ინტელექტ-კლუბი">ინტელექტ-კლუბი</option>
+              <option value="ოლიმპიადა">ოლიმპიადა</option>
+              <option value="სხვა">სხვა</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="ap-field">
+            <label>მოკლე აღწერა *</label>
+            <textarea id="post-excerpt" placeholder="სიახლის მოკლე შინაარსი..."></textarea>
+          </div>
+        </div>
+        <div class="form-row single">
+          <div class="ap-field">
+            <label>ფოტო (URL ან ატვირთვა)</label>
+            <input type="text" id="post-img-url" placeholder="https://... ან ჩასვით სურათის ბმული">
+            <div style="text-align:center;margin:8px 0;color:rgba(255,255,255,.3);font-size:12px;">— ან —</div>
+            <label for="post-img-file" style="text-transform:none;letter-spacing:0;">
+              <div class="ap-img-placeholder" id="post-img-drop">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>დააჭირეთ ფოტოს ასარჩევად</span>
+              </div>
+            </label>
+            <input type="file" id="post-img-file" accept="image/*" style="display:none">
+            <img id="post-img-preview" class="ap-img-preview" src="" alt="preview">
+          </div>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+          <button class="btn-submit" id="submit-post"><i class="fa-solid fa-paper-plane"></i> გამოქვეყნება</button>
+          <button class="btn-submit btn-danger" id="clear-post-form"><i class="fa-solid fa-rotate-left"></i> გასუფთავება</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROFILE TAB -->
+    <div class="ap-section" id="tab-profile">
+      <div class="ap-card">
+        <div class="ap-card-h"><i class="fa-solid fa-user-circle"></i> პირადი ინფო</div>
+        <div class="profile-grid">
+          <div class="profile-photo-wrap">
+            <img id="profile-photo" class="profile-photo" src="" alt="">
+            <div class="profile-photo-ph" id="profile-photo-ph" onclick="document.getElementById('profile-photo-input').click()">
+              <i class="fa-solid fa-camera"></i>
+              <span>ფოტოს ატვირთვა</span>
+            </div>
+            <input type="file" id="profile-photo-input" accept="image/*" style="display:none">
+            <label class="upload-label" for="profile-photo-input">
+              <i class="fa-solid fa-arrow-up-from-bracket"></i> ფოტოს შეცვლა
+            </label>
+          </div>
+          <div>
+            <div class="form-row">
+              <div class="ap-field">
+                <label>სახელი</label>
+                <input type="text" id="profile-name" value="School2">
+              </div>
+              <div class="ap-field">
+                <label>როლი / თანამდებობა</label>
+                <input type="text" id="profile-role" value="სკოლის ადმინისტრატორი">
+              </div>
+            </div>
+            <div class="form-row single">
+              <div class="ap-field">
+                <label>ელ-ფოსტა</label>
+                <input type="email" id="profile-email" value="kutaisi2@mes.gov.ge">
+              </div>
+            </div>
+            <div class="form-row single">
+              <div class="ap-field">
+                <label>ბიოგრაფია</label>
+                <textarea id="profile-bio" placeholder="მოკლე ბიო..."></textarea>
+              </div>
+            </div>
+            <button class="btn-submit" id="save-profile"><i class="fa-solid fa-floppy-disk"></i> შენახვა</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     PUBLIC WEBSITE
+═══════════════════════════════════ -->
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> ქუთაისი, გ. ტაბიძის 58</span>
+      <span><i class="fa-solid fa-phone"></i> +995 577 27 75 02</span>
+      <span><i class="fa-solid fa-envelope"></i> kutaisi2@mes.gov.ge</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-wrap">
+    <a href="#home" class="logo">
+      <div class="logo-seal"><span class="logo-num">2</span></div>
+      <div class="logo-info">
+        <span class="logo-name">ქუთაისის №2 საჯარო სკოლა</span>
+        <span class="logo-sub">იოსებ ოცხელის სახელობის</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#home" class="active">მთავარი</a>
+      <a href="#about">მემკვიდრეობა</a>
+      <a href="#news">სიახლეები</a>
+      <a href="#gallery">გალერეა</a>
+      <a href="#contact">კონტაქტი</a>
+      <a href="#contact" class="nav-cta">დაგვიკავშირდით</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-light"></div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag"><span class="dot"></span> ქუთაისი, საქართველო</div>
+        <h1 class="hero-title">სადაც ტრადიცია<br><em>ხვდება მომავალს</em></h1>
+        <p class="hero-sub">სსიპ — იოსებ ოცხელის სახელობის</p>
+        <p class="hero-desc">ქუთაისის №2 საჯარო სკოლა — 1880 წლიდან ქართული განათლების ერთ-ერთი ამაყი კერა, სადაც თაობები ყალიბდებიან ადამიანებად, ლიდერებად და შემქმნელებად.</p>
+        <div class="hero-btns">
+          <a href="#about" class="btn-primary"><i class="fa-solid fa-book-open-reader"></i> გაიცანით სკოლა</a>
+          <a href="#news" class="btn-secondary"><i class="fa-solid fa-calendar-days"></i> მიმდინარე აქტივობები</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hc-badge">დაარსდა</div>
+        <div class="hc-year">1880</div>
+        <div class="hc-label">წლიდან ვემსახურებით<br>ქართულ განათლებას</div>
+        <div class="hc-div"></div>
+        <div class="hc-facts">
+          <div class="hc-fact"><i class="fa-solid fa-users"></i> 1,500+ წარმატებული მოსწავლე</div>
+          <div class="hc-fact"><i class="fa-solid fa-chalkboard-user"></i> 120 სერტიფიცირებული პედაგოგი</div>
+          <div class="hc-fact"><i class="fa-solid fa-medal"></i> 50+ მედალოსანი კურსდამთავრებული</div>
+          <div class="hc-fact"><i class="fa-solid fa-chart-line"></i> 98% აკადემიური მოსწრება</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>გადახვევა</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip reveal">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+      <div class="stat-num counter" data-target="1500">0</div>
+      <div class="stat-lbl">წარმატებული მოსწავლე</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+      <div class="stat-num counter" data-target="120">0</div>
+      <div class="stat-lbl">სერტიფიცირებული პედაგოგი</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fa-solid fa-percent"></i></div>
+      <div class="stat-num counter" data-target="98">0</div>
+      <div class="stat-lbl">% აკადემიური მოსწრება</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon"><i class="fa-solid fa-medal"></i></div>
+      <div class="stat-num counter" data-target="50">0</div>
+      <div class="stat-lbl">ოქროსა და ვერცხლის მედალოსანი</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div class="about-img-wrap">
+        <div class="about-frame"></div>
+        <img src="https://scontent.ftbs5-4.fna.fbcdn.net/v/t1.6435-1/51112780_753465495028110_1308037212029321216_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=CEdc-6bMQeMQ7kNvwEXkdwr&_nc_oc=Adq5KIs3gZlkWMRCwvKiTwYFhpna5igKe4Jyp0CuqooA37CLGLYV6a93IqgFKBT8aZU&_nc_zt=24&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=dceI9OFXyrkHryrpKdccFw&_nc_ss=7b2a8&oh=00_Af7GJGGhKwhDjdP6FdJH9fa4E8aK8ODqxPw8s7enyPLyFA&oe=6A3E21CD" alt="იოსებ ოცხელი" class="about-img-main">
+        <div class="about-badge">
+          <div class="about-badge-num">145</div>
+          <div class="about-badge-txt">წელი ისტორია</div>
+        </div>
+      </div>
+      <div class="about-text" style="padding-top:12px;">
+        <div class="eyebrow">მემკვიდრეობა</div>
+        <h2 class="section-h">იოსებ ოცხელი და ქართული განათლების სათავეები</h2>
+        <p class="about-lead">იოსებ ოცხელი — ადამიანი, რომლის ხედვამ გასცდა ეპოქას. მისი ეღვაწეობით ქუთაისში საფუძველი ჩაეყარა პირველ ქართულ სათავადაზნაურო გიმნაზიას.</p>
+        <p class="about-body">1880 წლიდან ჩვენი სკოლა უწყვეტად ემსახურება ქართული განათლების განვითარებას. 145 წლის მანძილზე ათასობით მოსწავლე სწორედ ამ კედლებში ჩამოყალიბდა ინოვატორ, მოაზროვნე და ლიდერ პიროვნებად.</p>
+        <p class="about-body">დღეს ჩვენი სკოლა აგრძელებს ამ დიად მისიას — თანამედროვე პედაგოგიური მეთოდებით, სერტიფიცირებული მასწავლებლებით და ინოვაციური სასწავლო გარემოთი, ჩვენ ვამზადებთ ხვალინდელ საქართველოს.</p>
+        <div class="about-tags">
+          <span class="about-tag"><i class="fa-solid fa-award"></i> ეროვნული ჯილდოები</span>
+          <span class="about-tag"><i class="fa-solid fa-flask"></i> სამეცნიერო კლუბები</span>
+          <span class="about-tag"><i class="fa-solid fa-music"></i> ხელოვნება და კულტურა</span>
+          <span class="about-tag"><i class="fa-solid fa-person-running"></i> სპორტული წარმატებები</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HERITAGE QUOTE -->
+<div class="heritage">
+  <div class="heritage-inner reveal">
+    <div class="heritage-quote">
+      <div class="q-mark">"</div>
+      <p class="q-text">განათლება სინათლეა, რომელიც კაცს ადამიანობას ასწავლის. ეს სინათლე დაიცვით, გაახარეთ და გადასცეთ მომავალ თაობებს.</p>
+      <div class="q-author">
+        <img src="https://scontent.ftbs5-4.fna.fbcdn.net/v/t1.6435-1/51112780_753465495028110_1308037212029321216_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_ohc=CEdc-6bMQeMQ7kNvwEXkdwr&_nc_oc=Adq5KIs3gZlkWMRCwvKiTwYFhpna5igKe4Jyp0CuqooA37CLGLYV6a93IqgFKBT8aZU&_nc_zt=24&_nc_ht=scontent.ftbs5-4.fna&_nc_gid=dceI9OFXyrkHryrpKdccFw&_nc_ss=7b2a8&oh=00_Af7GJGGhKwhDjdP6FdJH9fa4E8aK8ODqxPw8s7enyPLyFA&oe=6A3E21CD" alt="იოსებ ოცხელი" class="q-avatar">
+        <div>
+          <div class="q-name">იოსებ ოცხელი</div>
+          <div class="q-role">პედაგოგი, საზოგადო მოღვაწე</div>
+        </div>
+      </div>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+        <div>
+          <div class="pillar-title">კრიტიკული აზროვნება</div>
+          <div class="pillar-desc">სწავლება, რომელიც მოსწავლეს ასწავლის არა მხოლოდ ფაქტებს, არამედ კითხვების დასმასა და ანალიზს.</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i class="fa-solid fa-globe"></i></div>
+        <div>
+          <div class="pillar-title">ეროვნული იდენტობა</div>
+          <div class="pillar-desc">ქართული ენის, კულტურისა და ისტორიის სიღრმისეული შესწავლა და სიყვარული.</div>
+        </div>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div>
+          <div class="pillar-title">ინოვაცია და შემოქმედება</div>
+          <div class="pillar-desc">21-ე საუკუნის უნარების განვითარება — ტექნოლოგია, მეცნიერება და ხელოვნება.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NEWS -->
+<section class="section section-alt" id="news">
+  <div class="wrap">
+    <div class="news-header reveal">
+      <div>
+        <div class="eyebrow">სკოლის ცხოვრება</div>
+        <h2 class="section-h">უახლესი სიახლეები<br>და აქტივობები</h2>
+      </div>
+      <a href="#" class="see-all">ყველა სიახლე <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="news-grid" id="public-news-grid">
+      <!-- Default cards -->
+      <div class="news-card reveal">
+        <div class="card-img">
+          <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/707932036_2717032692004704_5263631280747671162_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=mda-talgLIAQ7kNvwG2-4qN&_nc_oc=Adqb46Blhv9LtbYY-xgrO6WPasTMmG0GNgaKGLLcFJCl348VQdDTCeq6jjGVw29uC_c&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=kvg6957eH4cxiJDxcL1OWQ&_nc_ss=7b2a8&oh=00_Af7wDx1MpPaMKm9mJa7PZ53BaipKC4r2b_xPbK1wjWiAmQ&oe=6A1C9E6F" alt="კონფერენცია" loading="lazy">
+          <span class="card-tag">კონფერენცია</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><i class="fa-regular fa-calendar"></i> 25 მაისი, 2026</div>
+          <h3 class="card-title">სასკოლო კონფერენცია — „ის, რაც გვაერთიანებს"</h3>
+          <p class="card-excerpt">სკოლაში ჩატარდა მოსწავლეთა სამეცნიერო-საგანმანათლებლო კონფერენცია, რომელიც მიეძღვნა ქრისტიანობის სახელმწიფო რელიგიად გამოცხადების საიუბილეო თარიღს.</p>
+          <a href="#" class="card-link">სრულად წაიკითხე <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="news-card reveal reveal-d1">
+        <div class="card-img">
+          <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/706527183_2715682755473031_8798850586218370597_n.jpg?stp=dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=n9fksNaoRdAQ7kNvwHUa1Cq&_nc_oc=Adpf_NANTanRMKKws7x9kNlP-bdfpiTkk5B-CqdT2CcTJjzC1t3TjdRh7_CxgGHThS4&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=0FZcEIAcoMQDX0ZvmjBakg&_nc_ss=7b2a8&oh=00_Af6BGhQ5f_QNfitpNYZupo3YaOR8-gzjxyyGiCvR-6SZow&oe=6A1C9CDE" alt="ინტელექტ-კლუბი" loading="lazy">
+          <span class="card-tag">ინტელექტ-კლუბი</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><i class="fa-regular fa-calendar"></i> 23 მაისი, 2026</div>
+          <h3 class="card-title">ინტელექტუალური თამაში „რა? სად? როდის?"</h3>
+          <p class="card-excerpt">X კლასის მოსწავლეებს შორის გაიმართა დაძაბული და საინტერესო ინტელექტუალური შეჯიბრი. მოსწავლეებმა მაღალი აზროვნების უნარი გამოავლინეს.</p>
+          <a href="#" class="card-link">სრულად წაიკითხე <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="news-card reveal reveal-d2">
+        <div class="card-img">
+          <img src="https://scontent.ftbs5-2.fna.fbcdn.net/v/t39.30808-6/707329261_2716946728679967_8220718678462664758_n.jpg?stp=cp6_dst-jpg_s590x590_tt6&_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=bn1dDXpqrLkQ7kNvwGakSDk&_nc_oc=AdqSRMtTVZNUad9kF12-02i7_v3YVk5fTKUgvhKBqFupEaMuPZJmAV3951DAFppqZ2Q&_nc_zt=23&_nc_ht=scontent.ftbs5-2.fna&_nc_gid=kvg6957eH4cxiJDxcL1OWQ&_nc_ss=7b2a8&oh=00_Af6Bgks6bHzwZi5EDLeH--jUIPctvf2qotWq5uSjiZq3uQ&oe=6A1C9F82" alt="ლაშქრობა" loading="lazy">
+          <span class="card-tag">სასწავლო ტური</span>
+        </div>
+        <div class="card-body">
+          <div class="card-meta"><i class="fa-regular fa-calendar"></i> 20 მაისი, 2026</div>
+          <h3 class="card-title">ლექცია-ლაშქრობა მოწამეთის მონასტერში</h3>
+          <p class="card-excerpt">ისტორიის კათედრის ორგანიზებით მოეწყო სასწავლო ტური მოწამეთის სამონასტრო კომპლექსში, სადაც ბავშვებმა ილაპარაკეს არგვეთის მთავრების შესახებ.</p>
+          <a href="#" class="card-link">სრულად წაიკითხე <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section class="section section-alt" id="contact">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:56px;">
+      <div class="eyebrow">კონტაქტი</div>
+      <h2 class="section-h">დაგვიკავშირდით</h2>
+      <p class="section-p">გვეწვიეთ, დარეკეთ ან მოგვწერეთ — სიამოვნებით გიპასუხებთ ნებისმიერ შეკითხვაზე.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-block">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <div class="contact-lbl">მისამართი</div>
+            <div class="contact-val">ქალაქი ქუთაისი, გ. ტაბიძის 58</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <div class="contact-lbl">ტელეფონი</div>
+            <div class="contact-val">+995 (577) 27-75-02</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div>
+            <div class="contact-lbl">ელ-ფოსტა</div>
+            <div class="contact-val">kutaisi2@mes.gov.ge</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-clock"></i></div>
+          <div>
+            <div class="contact-lbl">სამუშაო საათები</div>
+            <div class="contact-val">ორშ–პარ: 09:00 – 18:00</div>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="#" class="soc-btn"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="soc-btn"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.4372990924734!2d42.700123!3d42.266243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405c8cf7596b6177%3A0xfa959a43a0e67610!2sKutaisi!5e0!3m2!1ska!2sge!4v1680000000000!5m2!1ska!2sge" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="სკოლის მდებარეობა"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <div class="fl-badge">2</div>
+        <div>
+          <div class="fl-name">ქუთაისის №2 საჯარო სკოლა</div>
+          <div class="fl-sub">იოსებ ოცხელის სახელობის</div>
+        </div>
+      </div>
+      <p class="footer-desc">1880 წლიდან ვემსახურებით ქართული განათლების განვითარებას. ჩვენი მისიაა — ყოველი მოსწავლე გახდეს თავისუფალი, მოაზროვნე და შემქმნელი ადამიანი.</p>
+      <div class="social-row">
+        <a href="#" class="soc-btn"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#" class="soc-btn"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-h">ნავიგაცია</div>
+      <ul class="footer-links">
+        <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> მთავარი</a></li>
+        <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> მემკვიდრეობა</a></li>
+        <li><a href="#news"><i class="fa-solid fa-chevron-right"></i> სიახლეები</a></li>
+        <li><a href="#gallery"><i class="fa-solid fa-chevron-right"></i> გალერეა</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> კონტაქტი</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-h">სერვისები</div>
+      <ul class="footer-links">
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> ელექტრონული ჟურნალი</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> სასწავლო განრიგი</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> სამეცნიერო კლუბები</a></li>
+        <li><a href="#"><i class="fa-solid fa-chevron-right"></i> სასპორტო განყოფილება</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-h">კონტაქტი</div>
+      <ul class="footer-links">
+        <li><a href="#"><i class="fa-solid fa-location-dot"></i> გ. ტაბიძის 58, ქუთაისი</a></li>
+        <li><a href="tel:+995577277502"><i class="fa-solid fa-phone"></i> +995 577 27 75 02</a></li>
+        <li><a href="mailto:kutaisi2@mes.gov.ge"><i class="fa-solid fa-envelope"></i> kutaisi2@mes.gov.ge</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 სსიპ იოსებ ოცხელის სახელობის ქუთაისის №2 საჯარო სკოლა</span>
+    <span>ყველა უფლება დაცულია</span>
+  </div>
+</footer>
+
+<script>
+/* ─────────── STATE ─────────── */
+const ADMIN_USER = 'School2';
+const ADMIN_PASS = 'School2a';
+let posts = JSON.parse(localStorage.getItem('school2_posts') || '[]');
+let profile = JSON.parse(localStorage.getItem('school2_profile') || '{"name":"School2","role":"სკოლის ადმინისტრატორი","email":"kutaisi2@mes.gov.ge","bio":"","photo":""}');
+
+/* ─────────── HERO ─────────── */
+setTimeout(() => { const b = document.getElementById('heroBg'); if(b) b.classList.add('loaded'); }, 80);
+
+/* ─────────── SCROLL REVEAL ─────────── */
+const revEls = document.querySelectorAll('.reveal');
+const revObs = new IntersectionObserver(es => {
+  es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('active'); revObs.unobserve(e.target); }});
+}, {threshold:.1});
+revEls.forEach(el => revObs.observe(el));
+
+/* ─────────── COUNTERS ─────────── */
+let cStarted = false;
+function startCounters(){
+  if(cStarted) return; cStarted = true;
+  document.querySelectorAll('.counter').forEach(c => {
+    const t = +c.dataset.target, d = 1800, s = 16, inc = t/(d/s); let cur=0;
+    const tm = setInterval(() => {
+      cur += inc; if(cur >= t){ cur=t; clearInterval(tm); c.textContent = t + (t===98?'%':'+'); }
+      else c.textContent = Math.floor(cur);
+    }, s);
+  });
+}
+const ss = document.querySelector('.stats-strip');
+if(ss){ new IntersectionObserver(es => { if(es[0].isIntersecting) startCounters(); },{threshold:.3}).observe(ss); }
+
+/* ─────────── NAV ACTIVE ─────────── */
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if(window.scrollY >= s.offsetTop-130) cur = s.id; });
+  navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href')==='#'+cur));
+}, {passive:true});
+
+/* ─────────── TOAST ─────────── */
+function showToast(msg='შენახულია!'){
+  const t = document.getElementById('toast');
+  document.getElementById('toast-msg').textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+/* ─────────── LOGIN ─────────── */
+const loginModal = document.getElementById('login-modal');
+document.getElementById('fab-btn').onclick = () => loginModal.classList.add('open');
+document.getElementById('login-close').onclick = () => { loginModal.classList.remove('open'); clearLoginErr(); };
+loginModal.addEventListener('click', e => { if(e.target===loginModal){ loginModal.classList.remove('open'); clearLoginErr(); }});
+function clearLoginErr(){ document.getElementById('login-err').style.display='none'; }
+
+document.getElementById('login-submit').onclick = doLogin;
+document.getElementById('login-pass').addEventListener('keydown', e => { if(e.key==='Enter') doLogin(); });
+
+function doLogin(){
+  const u = document.getElementById('login-user').value.trim();
+  const p = document.getElementById('login-pass').value;
+  if(u===ADMIN_USER && p===ADMIN_PASS){
+    loginModal.classList.remove('open');
+    clearLoginErr();
+    document.getElementById('login-user').value='';
+    document.getElementById('login-pass').value='';
+    openAdminPanel();
+  } else {
+    document.getElementById('login-err').style.display='block';
+  }
+}
+
+/* ─────────── ADMIN PANEL ─────────── */
+function openAdminPanel(){
+  document.getElementById('admin-panel').classList.add('open');
+  document.body.style.overflow='hidden';
+  loadProfileUI();
+  renderAllPosts();
+  updateDashStats();
+}
+
+document.getElementById('close-panel-btn').onclick = () => {
+  document.getElementById('admin-panel').classList.remove('open');
+  document.body.style.overflow='';
+};
+
+/* TABS */
+document.querySelectorAll('.ap-tab').forEach(tab => {
+  tab.onclick = () => {
+    document.querySelectorAll('.ap-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.ap-section').forEach(s=>s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('tab-'+tab.dataset.tab).classList.add('active');
+  };
+});
+
+/* ─────────── PROFILE ─────────── */
+function loadProfileUI(){
+  document.getElementById('profile-name').value = profile.name;
+  document.getElementById('profile-role').value = profile.role;
+  document.getElementById('profile-email').value = profile.email;
+  document.getElementById('profile-bio').value = profile.bio || '';
+  if(profile.photo){
+    const ph = document.getElementById('profile-photo');
+    ph.src = profile.photo; ph.classList.add('show');
+    document.getElementById('profile-photo-ph').style.display='none';
+    const sm = document.getElementById('ap-avatar-preview-small');
+    sm.innerHTML=''; const img = document.createElement('img'); img.src=profile.photo; img.className='ap-user-img'; sm.appendChild(img);
+  }
+}
+
+document.getElementById('profile-photo-input').addEventListener('change', function(){
+  const f = this.files[0]; if(!f) return;
+  const r = new FileReader();
+  r.onload = e => {
+    profile.photo = e.target.result;
+    const ph = document.getElementById('profile-photo');
+    ph.src = e.target.result; ph.classList.add('show');
+    document.getElementById('profile-photo-ph').style.display='none';
+    const sm = document.getElementById('ap-avatar-preview-small');
+    sm.innerHTML=''; const img = document.createElement('img'); img.src=e.target.result; img.className='ap-user-img'; sm.appendChild(img);
+  };
+  r.readAsDataURL(f);
+});
+
+document.getElementById('save-profile').onclick = () => {
+  profile.name = document.getElementById('profile-name').value.trim() || 'School2';
+  profile.role = document.getElementById('profile-role').value.trim();
+  profile.email = document.getElementById('profile-email').value.trim();
+  profile.bio = document.getElementById('profile-bio').value.trim();
+  localStorage.setItem('school2_profile', JSON.stringify(profile));
+  showToast('პროფილი შენახულია!');
+};
+
+/* ─────────── POST IMAGE PREVIEW ─────────── */
+document.getElementById('post-img-url').addEventListener('input', function(){
+  const p = document.getElementById('post-img-preview');
+  if(this.value){ p.src=this.value; p.classList.add('show'); } else { p.classList.remove('show'); }
+});
+
+document.getElementById('post-img-file').addEventListener('change', function(){
+  const f = this.files[0]; if(!f) return;
+  const r = new FileReader();
+  r.onload = e => {
+    const p = document.getElementById('post-img-preview');
+    p.src=e.target.result; p.classList.add('show');
+    document.getElementById('post-img-url').value='';
+  };
+  r.readAsDataURL(f);
+});
+
+/* ─────────── ADD POST ─────────── */
+document.getElementById('submit-post').onclick = () => {
+  const title = document.getElementById('post-title').value.trim();
+  const excerpt = document.getElementById('post-excerpt').value.trim();
+  if(!title || !excerpt){ showToast('შეავსეთ სათაური და აღწერა'); return; }
+  const cat = document.getElementById('post-cat').value;
+  const imgUrl = document.getElementById('post-img-url').value.trim();
+  const imgPrev = document.getElementById('post-img-preview');
+  const img = imgUrl || (imgPrev.classList.contains('show') ? imgPrev.src : '');
+  const now = new Date();
+  const months=['იანვარი','თებერვალი','მარტი','აპრილი','მაისი','ივნისი','ივლისი','აგვისტო','სექტემბერი','ოქტომბერი','ნოემბერი','დეკემბერი'];
+  const dateStr = now.getDate()+' '+months[now.getMonth()]+', '+now.getFullYear();
+  const post = { id:Date.now(), title, excerpt, cat, img, date:dateStr, author:{name:profile.name, photo:profile.photo} };
+  posts.unshift(post);
+  localStorage.setItem('school2_posts', JSON.stringify(posts));
+  clearPostForm();
+  renderAllPosts();
+  renderPublicPosts();
+  updateDashStats();
+  showToast('სიახლე გამოქვეყნდა!');
+  document.querySelector('[data-tab="posts"]').click();
+};
+
+document.getElementById('clear-post-form').onclick = clearPostForm;
+
+function clearPostForm(){
+  document.getElementById('post-title').value='';
+  document.getElementById('post-excerpt').value='';
+  document.getElementById('post-cat').value='სიახლე';
+  document.getElementById('post-img-url').value='';
+  document.getElementById('post-img-preview').classList.remove('show');
+  document.getElementById('post-img-file').value='';
+}
+
+/* ─────────── RENDER ─────────── */
+function renderAllPosts(){
+  const container = document.getElementById('all-posts-list');
+  const dashList = document.getElementById('dash-posts-list');
+  if(!posts.length){
+    container.innerHTML='<p style="color:rgba(255,255,255,.4);font-size:14px;">სიახლე ჯერ არ დამატებულა</p>';
+    document.getElementById('dash-recent-posts').style.display='none';
+    return;
+  }
+  document.getElementById('dash-recent-posts').style.display='block';
+  const makeItem = (p) => {
+    const d = document.createElement('div'); d.className='post-item';
+    d.innerHTML = `
+      ${p.img ? `<img src="${p.img}" alt="" class="post-thumb" onerror="this.style.display='none'">` : `<div class="post-thumb-ph"><i class="fa-solid fa-image"></i></div>`}
+      <div class="post-info">
+        <h4>${esc(p.title)}</h4>
+        <p><span class="tag-badge">${esc(p.cat)}</span> ${esc(p.date)}</p>
+      </div>
+      <div class="post-actions">
+        <button class="post-btn del" title="წაშლა" data-id="${p.id}"><i class="fa-solid fa-trash"></i></button>
+      </div>`;
+    d.querySelector('.post-btn.del').onclick = () => deletePost(p.id);
+    return d;
+  };
+  container.innerHTML='';
+  dashList.innerHTML='';
+  posts.forEach(p => {
+    container.appendChild(makeItem(p));
+    if(posts.indexOf(p)<3) dashList.appendChild(makeItem(p));
+  });
+}
+
+function renderPublicPosts(){
+  if(!posts.length) return;
+  const grid = document.getElementById('public-news-grid');
+  const adminCards = posts.slice(0,6).map(p => `
+    <div class="news-card reveal active">
+      <div class="card-img">
+        ${p.img ? `<img src="${p.img}" alt="${esc(p.title)}" loading="lazy" onerror="this.parentElement.style.background='#f5f5f0'">` : `<div style="background:var(--gold-pale);height:100%;display:flex;align-items:center;justify-content:center;"><i class="fa-solid fa-image" style="font-size:36px;color:var(--gold-2)"></i></div>`}
+        <span class="card-tag">${esc(p.cat)}</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><i class="fa-regular fa-calendar"></i> ${esc(p.date)}</div>
+        <h3 class="card-title">${esc(p.title)}</h3>
+        <p class="card-excerpt">${esc(p.excerpt)}</p>
+        ${p.author?.name ? `<div class="card-author">${p.author.photo?`<img src="${p.author.photo}" class="card-author-img" alt="">`:''}<span class="card-author-name">${esc(p.author.name)}</span></div>` : ''}
+        <a href="#" class="card-link">სრულად წაიკითხე <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>`).join('');
+  grid.innerHTML = adminCards + grid.innerHTML.replace(/<div class="news-card reveal[^"]*"[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/g,'');
+}
+
+function deletePost(id){
+  posts = posts.filter(p=>p.id!==id);
+  localStorage.setItem('school2_posts', JSON.stringify(posts));
+  renderAllPosts();
+  updateDashStats();
+  showToast('სიახლე წაიშალა');
+}
+
+function updateDashStats(){
+  document.getElementById('dash-posts-count').textContent = posts.length;
+}
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+/* init */
+renderPublicPosts();
+updateDashStats();
+</script>
+</body>
+</html>
